@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefce8;
+  color: #1e293b;
+  transition: 0.3s ease-in-out;
+  padding: 2rem;
+}
+
+nav {
+  background: #ffffff;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.theme-toggle {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 1rem 2rem; /* Increased top padding for vertical centering */
+}
+
+.text-section,
+.counter-section {
+  flex: 1;
+  min-width: 320px;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+.text-section {
+  background: linear-gradient(135deg, #fef3c7, #e0f2fe);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ayah-ar {
+  font-size: 2.4rem;
+  color: #b45309;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.ayah-en {
+  font-size: 1.3rem;
+  color: #334155;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.ayah-en span {
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.cta {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #047857;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+
+.counter-section {
+  background-color: #f0fdfa;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-card {
+  text-align: center;
+}
+
+.circle-counter {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #22d3ee;
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add {
+  background-color: #10b981;
+  color: white;
+}
+
+.add:hover {
+  background-color: #059669;
+}
+
+.reset {
+  background-color: #ef4444;
+  color: white;
+}
+
+.reset:hover {
+  background-color: #dc2626;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+body.dark nav {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark .text-section {
+  background: linear-gradient(135deg, #1f2937, #1e40af);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.12);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 1rem;
+}
+
+
+body.dark .ayah-ar {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fde68a; 
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+body.dark .ayah-en {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #dbeafe; 
+  margin-bottom: 1.2rem;
+}
+
+body.dark .ayah-en span {
+  font-size: 1rem;
+  color: #93c5fd;
+}
+
+body.dark .cta {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #6ee7b7;
+  text-shadow: 0 0 6px rgba(110, 231, 183, 0.3);
+  margin-top: 1rem;
+}
+
+body.dark .counter-section {
+  background-color: #1e3a8a;
+}
+
+body.dark .circle-counter {
+  background-color: #38bdf8;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+
+  .text-section,
+  .counter-section {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .ayah-ar {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .ayah-en {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .cta {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .circle-counter {
+    width: 140px;
+    height: 140px;
+    font-size: 2.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
