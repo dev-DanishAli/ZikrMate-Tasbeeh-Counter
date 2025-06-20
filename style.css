@@ -45,27 +45,29 @@ nav {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   gap: 2rem;
-  padding: 4rem 1rem 2rem; /* Increased top padding for vertical centering */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
+/* Common styles for left & right sections */
 .text-section,
 .counter-section {
-  flex: 1;
-  min-width: 320px;
-  padding: 2rem;
-  margin: 1rem;
-  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+  padding: 2.5rem;
+  margin: 1rem auto;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Left Section (Light Theme) */
 .text-section {
   background: linear-gradient(135deg, #fef3c7, #e0f2fe);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
-  padding: 2.5rem;
-  margin: 1rem;
-  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +101,7 @@ nav {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-
+/* Right Section (Counter) */
 .counter-section {
   background-color: #f0fdfa;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
@@ -160,7 +162,8 @@ nav {
   background-color: #dc2626;
 }
 
-/* Dark Mode */
+/* ---------------- DARK MODE ---------------- */
+
 body.dark {
   background-color: #0f172a;
   color: #f8fafc;
@@ -171,41 +174,30 @@ body.dark nav {
   color: #f8fafc;
 }
 
+body.dark .theme-toggle {
+  background: #1d4ed8;
+}
+
 body.dark .text-section {
   background: linear-gradient(135deg, #1f2937, #1e40af);
   box-shadow: 0 0 25px rgba(59, 130, 246, 0.12);
-  border-radius: 16px;
-  padding: 2.5rem;
-  margin: 1rem;
 }
 
-
 body.dark .ayah-ar {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #fde68a; 
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
+  color: #fde68a;
 }
 
 body.dark .ayah-en {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #dbeafe; 
-  margin-bottom: 1.2rem;
+  color: #dbeafe;
 }
 
 body.dark .ayah-en span {
-  font-size: 1rem;
   color: #93c5fd;
 }
 
 body.dark .cta {
-  font-size: 1.3rem;
-  font-weight: 600;
   color: #6ee7b7;
   text-shadow: 0 0 6px rgba(110, 231, 183, 0.3);
-  margin-top: 1rem;
 }
 
 body.dark .counter-section {
@@ -215,6 +207,8 @@ body.dark .counter-section {
 body.dark .circle-counter {
   background-color: #38bdf8;
 }
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
 
 @media (max-width: 600px) {
   body {
@@ -249,22 +243,22 @@ body.dark .circle-counter {
   .counter-section {
     width: 100%;
     margin: 0.5rem 0;
-    padding: 1.2rem;
+    padding: 1.5rem;
     border-radius: 12px;
   }
 
   .ayah-ar {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .ayah-en {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 
   .cta {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
