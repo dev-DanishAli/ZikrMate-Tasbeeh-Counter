@@ -53,7 +53,7 @@ nav {
   padding: 2rem 1rem;
 }
 
-/* Common styles for left & right sections */
+
 .text-section,
 .counter-section {
   width: 100%;
@@ -64,7 +64,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-/* Left Section (Light Theme) */
+
 .text-section {
   background: linear-gradient(135deg, #fef3c7, #e0f2fe);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
@@ -101,7 +101,7 @@ nav {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-/* Right Section (Counter) */
+
 .counter-section {
   background-color: #f0fdfa;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
@@ -162,7 +162,7 @@ nav {
   background-color: #dc2626;
 }
 
-/* ---------------- DARK MODE ---------------- */
+
 
 body.dark {
   background-color: #0f172a;
@@ -208,7 +208,7 @@ body.dark .circle-counter {
   background-color: #38bdf8;
 }
 
-/* ---------------- MOBILE RESPONSIVE ---------------- */
+
 
 @media (max-width: 600px) {
   body {
