@@ -53,7 +53,6 @@ nav {
   padding: 2rem 1rem;
 }
 
-
 .text-section,
 .counter-section {
   width: 100%;
@@ -63,7 +62,6 @@ nav {
   border-radius: 16px;
   transition: all 0.3s ease-in-out;
 }
-
 
 .text-section {
   background: linear-gradient(135deg, #fef3c7, #e0f2fe);
@@ -101,7 +99,6 @@ nav {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-
 .counter-section {
   background-color: #f0fdfa;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
@@ -124,7 +121,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
   box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
 }
 
@@ -162,7 +159,34 @@ nav {
   background-color: #dc2626;
 }
 
+.target-input {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
+.target-input label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.target-input input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #22d3ee;
+  outline: none;
+  width: 60%;
+  text-align: center;
+}
+
+.remaining {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #475569;
+}
 
 body.dark {
   background-color: #0f172a;
@@ -208,6 +232,31 @@ body.dark .circle-counter {
   background-color: #38bdf8;
 }
 
+body.dark .target-input label {
+  color: #e2e8f0;
+}
+
+body.dark .target-input input {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border: 2px solid #38bdf8;
+}
+
+body.dark .remaining {
+  color: #cbd5e1;
+}
+
+.success-msg {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #22c55e;
+  text-align: center;
+}
+
+body.dark .success-msg {
+  color: #4ade80;
+}
 
 
 @media (max-width: 600px) {

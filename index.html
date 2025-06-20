@@ -7,31 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">ZikrMate</div>
-      <button class="theme-toggle" id="themeBtn">🌙</button>
-    </nav>
-  </header>
+  <main>
+    <header>
+      <nav>
+        <h1 class="logo">ZikrMate</h1>
+        <button id="themeBtn" class="theme-toggle">🌙</button>
+      </nav>
+    </header>
 
-  <main class="container">
-    <section class="text-section">
-      <blockquote>
+    <div class="container">
+      <div class="text-section">
         <p class="ayah-ar">ٱلَّذِينَ ءَامَنُواْ وَتَطۡمَئِنُّ قُلُوبُهُم بِذِكۡرِ ٱللَّهِ</p>
-        <p class="ayah-en">"Indeed, in the remembrance of Allah do hearts find peace." <br><span>- Quran 13:28</span></p>
-      </blockquote>
-      <p class="cta"> Start your spiritual journey with ZikrMate.</p>
-    </section>
+        <p class="ayah-en">
+          "Indeed, in the remembrance of Allah do hearts find peace." <br />
+          <span>- Quran 13:28</span>
+        </p>
+        <p class="cta">Start your spiritual journey with ZikrMate.</p>
+      </div>
 
-    <section class="counter-section">
-      <div class="counter-card">
-        <div class="circle-counter" id="count">0</div>
-        <div class="buttons">
-          <button class="btn add" id="addBtn">Add +1</button>
-          <button class="btn reset" id="resetBtn"> Reset </button>
+      <div class="counter-section">
+        <div class="counter-card">
+          <div class="target-input">
+            <label for="target">Target Zikr Count:</label>
+            <input type="number" id="target" placeholder="e.g. 33, 100" min="1" />
+          </div>
+          <div class="circle-counter" id="count">0</div>
+          <p id="remaining" class="remaining">Remaining: ∞</p>
+          <div class="buttons">
+            <button id="addBtn" class="btn add">Add +1</button>
+            <button id="resetBtn" class="btn reset">Reset</button>
+          </div>
+          <p id="successMsg" class="success-msg" style="display: none;"> Zikr complete! May Allah accept it.</p>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
